@@ -1,0 +1,5 @@
+# vim specified
+.vim/bundle/*
+.vim/vim_swap/*
+.vim/vim_backup/*
+

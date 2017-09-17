@@ -1,0 +1,20 @@
+alias rm 'rm -i'
+alias cp 'cp -i'
+alias mv 'mv -i'
+alias ls 'ls --color=auto'
+alias la 'ls -a'
+alias ll 'ls -la'
+alias vi	vim
+
+set prompt='[%n@%m %c]# '
+
+set path = ($path /usr/bin $HOME/.dotfiles/bin)
+
+if ($?prompt) then
+
+	if ($?tcsh) then
+		bindkey -k up history-search-backward
+		bindkey -k down history-search-backward
+	endif
+
+endif
