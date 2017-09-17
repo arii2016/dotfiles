@@ -163,8 +163,8 @@ nnoremap <silent> <C-i> :nohl<CR><C-i>
 nnoremap <silent> <leader>s :shell<CR>
 
 " Remap command mode key
-nnoremap ; :
-nnoremap : ;
+"nnoremap ; :
+"nnoremap : ;
 
 " Colorscheme
 colorscheme xoria256
