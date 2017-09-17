@@ -1,0 +1,6 @@
+#!/bin/sh
+
+find . -type f \( -name '*.png' -o -name '*.PNG' \) | while read FILE
+do
+    optipng -o7 ${FILE}
+done

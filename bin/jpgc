@@ -1,0 +1,6 @@
+#!/bin/sh
+
+find . -type f \( -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' -o -name '*.JPEG' \) | while read FILE
+do
+    jpegoptim --strip-all ${FILE}
+done

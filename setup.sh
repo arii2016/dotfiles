@@ -3,7 +3,6 @@
 cd $HOME
 ln -s .dotfiles/.tcshrc
 ln -s .dotfiles/.gitconfig
-ln -s .dotfiles/.gitignore.global .gitignore
 ln -s .dotfiles/.vimrc
 
 mkdir .vim
@@ -11,5 +10,4 @@ cd .vim
 curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh > install.sh
 sh ./install.sh
 rm install.sh
-
 
