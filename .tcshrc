@@ -9,7 +9,6 @@ switch ($OSTYPE)
         alias ls 'ls --color=auto'
         breaksw
 endsw
-alias ls 'ls -G'
 alias la 'ls -a'
 alias ll 'ls -la'
 alias vi	vim
