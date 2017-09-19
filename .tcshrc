@@ -1,7 +1,15 @@
 alias rm 'rm -i'
 alias cp 'cp -i'
 alias mv 'mv -i'
-alias ls 'ls --color=auto'
+switch ($OSTYPE)
+    case darwin:
+        alias ls 'ls -G'
+        breaksw
+    case *:
+        alias ls 'ls --color=auto'
+        breaksw
+endsw
+alias ls 'ls -G'
 alias la 'ls -a'
 alias ll 'ls -la'
 alias vi	vim
