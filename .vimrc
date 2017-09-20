@@ -142,6 +142,7 @@ set nofoldenable
 nnoremap j gj
 nnoremap k gk
 set whichwrap=b,s,h,l,<,>,[,]
+set notitle
 
 set nobackup
 set noswapfile
