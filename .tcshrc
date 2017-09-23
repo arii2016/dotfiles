@@ -25,3 +25,10 @@ if ($?prompt) then
 	endif
 
 endif
+if ($?REMOTEHOST && $?SSH_CONNECTION) then
+    set option=""
+    if ({ tmux has-session } && { tmux list-sessions }) then
+        set option="attach"
+    endif
+    tmux -u $option && logout
+endif
