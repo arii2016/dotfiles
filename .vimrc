@@ -136,7 +136,7 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 set expandtab
-set clipboard=unnamed
+set clipboard=unnamed,autoselect
 set autoread
 set nofoldenable
 nnoremap j gj
