@@ -16,7 +16,7 @@ alias la 'ls -a'
 alias ll 'ls -la'
 alias vi	vim
 
-if ({ ( which java >& /dev/null ) } == 0) then
+if ({ ( which java >& /dev/null ) } == 1) then
     set java_tmp_which = `which java`
     set java_tmp_readlink = `readlink $java_tmp_which`
     set JAVA_HOME = `readlink $java_tmp_readlink`
