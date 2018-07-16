@@ -14,7 +14,6 @@ switch ($OSTYPE)
 endsw
 alias la 'ls -a'
 alias ll 'ls -la'
-alias vi	vim
 
 if ({ ( which java >& /dev/null ) } == 1) then
     set java_tmp_which = `which java`

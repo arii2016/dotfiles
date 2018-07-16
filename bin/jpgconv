@@ -2,5 +2,5 @@
 
 find . -type f \( -name '*.jpg' -o -name '*.JPG' -o -name '*.jpeg' -o -name '*.JPEG' \) | while read FILE
 do
-    jpegoptim --strip-all ${FILE}
+    convert ${FILE} -monitor -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace sRGB ${FILE}
 done
