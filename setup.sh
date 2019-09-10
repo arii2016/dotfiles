@@ -4,7 +4,8 @@ cd $HOME
 ln -s .dotfiles/.tcshrc
 ln -s .dotfiles/.gitconfig
 ln -s .dotfiles/.vimrc
-ln -s .dotfiles/.tmux.conf
+ln -s .dotfiles/.git-completion.bash
+ln -s .dotfiles/.git-completion.tcsh
 
 mkdir .vim
 cd .vim

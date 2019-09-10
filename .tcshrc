@@ -1,5 +1,6 @@
 set color
 set colorcat
+set autolist=ambiguous
 
 alias rm 'rm -i'
 alias cp 'cp -i'
@@ -14,18 +15,27 @@ switch ($OSTYPE)
 endsw
 alias la 'ls -a'
 alias ll 'ls -la'
+alias vi vim
 
-if ({ ( which java >& /dev/null ) } == 1) then
-    set java_tmp_which = `which java`
-    set java_tmp_readlink = `readlink $java_tmp_which`
-    set JAVA_HOME = `readlink $java_tmp_readlink`
-    unset java_tmp_which
-    unset java_tmp_readlink
-endif
+set     red="%{\033[1;31m%}"
+set   green="%{\033[1;32m%}"
+set  yellow="%{\033[1;33m%}"
+set    blue="%{\033[1;34m%}"
+set magenta="%{\033[1;35m%}"
+set    cyan="%{\033[1;36m%}"
+set   white="%{\033[0;37m%}"
+set     end="%{\033[0m%}"
 
-set prompt='[%n@%m %c]# '
+source ~/.git-completion.tcsh
+alias __git_current_branch 'git rev-parse --abbrev-ref HEAD >& /dev/null && echo "(`git rev-parse --abbrev-ref HEAD`)"'
+alias precmd 'set prompt="%n@%m ${green}%c${cyan}`__git_current_branch`${end} # "'
 
 set path = ($path /usr/bin $HOME/.dotfiles/bin)
+
+if ($OSTYPE == darwin) then
+    setenv IDF_PATH ~/esp/esp-idf
+    set path = ($path $HOME/esp/xtensa-esp32-elf/bin)
+endif
 
 if ($?prompt) then
 
@@ -35,3 +45,4 @@ if ($?prompt) then
 	endif
 
 endif
+
