@@ -1,6 +1,9 @@
 set color
 set colorcat
 set autolist=ambiguous
+#set history 3000
+set savehist=3000
+#set savehist = (3000 merge)
 
 alias rm 'rm -i'
 alias cp 'cp -i'
