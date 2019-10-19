@@ -31,7 +31,7 @@ NeoBundle 'xoria256.vim'
 NeoBundle 'sudo.vim'
 
 " unite.vim
-NeoBundle 'unite.vim'
+"NeoBundle 'unite.vim'
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
 \     'windows' : 'tools\\update-dll-mingw',

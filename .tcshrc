@@ -9,7 +9,7 @@ alias rm 'rm -i'
 alias cp 'cp -i'
 alias mv 'mv -i'
 switch ($OSTYPE)
-    case darwin:
+    case bsd44:
         alias ls 'ls -G'
         breaksw
     case *:
