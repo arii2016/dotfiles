@@ -13,3 +13,9 @@ curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.s
 sh ./install.sh
 rm install.sh
 
+if [ ! -e .ssh ]; then
+    mkdir .ssh
+fi
+cd $HOME/.ssh
+ln -s $HOME/.dotfiles/.ssh/config
+cd $HOME
