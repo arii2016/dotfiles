@@ -6,6 +6,7 @@ ln -s .dotfiles/.gitconfig
 ln -s .dotfiles/.vimrc
 ln -s .dotfiles/.git-completion.bash
 ln -s .dotfiles/.git-completion.tcsh
+ln -s .dotfiles/.czrc
 
 mkdir .vim
 cd .vim
