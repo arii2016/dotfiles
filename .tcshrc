@@ -37,7 +37,7 @@ set path = ($path /usr/bin $HOME/.dotfiles/bin)
 
 if ($OSTYPE == bsd44) then
     setenv IDF_PATH ~/esp/esp-idf
-    set path = ($path $HOME/esp/xtensa-esp32-elf/bin)
+    set path = ($path $HOME/esp/xtensa-esp32-elf/bin $HOME/.nodebrew/current/bin)
 endif
 
 if ($?prompt) then
