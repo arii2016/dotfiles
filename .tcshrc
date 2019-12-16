@@ -14,6 +14,7 @@ switch ($OSTYPE)
         breaksw
     case *:
         alias ls 'ls --color=auto'
+        alias setdsp "setenv DISPLAY \!*\:0.0"
         breaksw
 endsw
 alias la 'ls -a'
