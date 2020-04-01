@@ -13,7 +13,7 @@ switch ($OSTYPE)
         alias ls 'ls -G'
         breaksw
     case *:
-        alias ls 'ls -G'
+        alias ls 'ls --color=auto'
         alias setdsp "setenv DISPLAY \!*\:0.0"
         breaksw
 endsw
