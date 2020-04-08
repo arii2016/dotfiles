@@ -9,11 +9,11 @@ alias rm 'rm -i'
 alias cp 'cp -i'
 alias mv 'mv -i'
 switch ($OSTYPE)
-    case bsd44:
+    case darwin:
         alias ls 'ls -G'
         breaksw
     case *:
-        alias ls 'ls -G'
+        alias ls 'ls --color=auto'
         alias setdsp "setenv DISPLAY \!*\:0.0"
         breaksw
 endsw
