@@ -36,7 +36,7 @@ alias precmd 'set prompt="%n@%m ${green}%c${cyan}`__git_current_branch`${end} # 
 
 set path = ($path /usr/bin $HOME/.dotfiles/bin)
 
-if ($OSTYPE == bsd44) then
+if ($OSTYPE == darwin) then
     setenv IDF_PATH ~/esp/esp-idf
     set path = ($path $HOME/esp/xtensa-esp32-elf/bin $HOME/.nodebrew/current/bin)
 endif
