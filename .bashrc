@@ -34,7 +34,7 @@ export PS1='\[\033[37m\][\[\033[36m\]\u\[\033[37m\]@\h \[\033[32m\]\W\[\033[37m\
 
 export PATH=$PATH:/usr/bin:$HOME/.dotfiles/bin
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    export　IDF_PATH=$HOME/esp/esp-idf
+    export IDF_PATH=$HOME/esp/esp-idf
     export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin:$HOME/.nodebrew/current/bin
 fi
 
