@@ -16,7 +16,7 @@ case $OSTYPE in
         alias ls='ls -FG';;
     *)
         alias ls='ls -F --color=auto'
-        alias setdsp="export DISPLAY=\!*\:0.0"
+        alias setdsp="export DISPLAY=:0"
 esac
 alias la='ls -a'
 alias ll='ls -la'
