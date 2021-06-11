@@ -1,12 +1,14 @@
 #!/bin/sh
 
 cd $HOME
+ln -s .dotfiles/.bash_profile
+ln -s .dotfiles/.bashrc
 ln -s .dotfiles/.tcshrc
 ln -s .dotfiles/.gitconfig
 ln -s .dotfiles/.vimrc
 ln -s .dotfiles/.git-completion.bash
 ln -s .dotfiles/.git-completion.tcsh
-ln -s .dotfiles/.czrc
+ln -s .dotfiles/.git-prompt.sh
 
 mkdir .vim
 cd .vim
