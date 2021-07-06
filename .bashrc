@@ -38,6 +38,10 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin:$HOME/.nodebrew/current/bin
 fi
 
+# scp時、「bind: 警告: 行編集が有効になっていません」対策
+if [ -z "$PS1" ]; then
+    return;
+fi
 # 上矢印キー
 bind '"\e[A": history-search-backward'
 # 下矢印キー
