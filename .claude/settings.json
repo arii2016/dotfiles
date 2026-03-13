@@ -1,0 +1,8 @@
+{
+  "effortLevel": "high",
+  "language": "Japanese",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
+  }
+}

@@ -1,5 +1,4 @@
 # 必要ソフト
 - vim
-- tmux
-- tcsh
+- zsh
 - git
