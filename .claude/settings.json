@@ -1,8 +1,9 @@
 {
-  "effortLevel": "high",
-  "language": "Japanese",
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh"
-  }
+  },
+  "language": "Japanese",
+  "effortLevel": "high",
+  "model": "opus"
 }
