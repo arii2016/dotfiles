@@ -5,5 +5,5 @@
   },
   "language": "Japanese",
   "effortLevel": "high",
-  "model": "opus"
+  "voiceEnabled": true
 }
