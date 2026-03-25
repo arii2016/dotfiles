@@ -7,6 +7,7 @@ ln -s .dotfiles/.vimrc
 ln -s .dotfiles/.git-completion.bash
 ln -s .dotfiles/.git-completion.zsh
 ln -s .dotfiles/.git-prompt.sh
+ln -s .dotfiles/.tmux.conf
 
 mkdir .vim
 cd .vim
