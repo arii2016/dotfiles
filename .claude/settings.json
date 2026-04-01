@@ -5,5 +5,8 @@
   },
   "language": "Japanese",
   "effortLevel": "high",
-  "voiceEnabled": true
+  "voiceEnabled": true,
+  "enabledPlugins": {
+    "clangd-lsp@claude-plugins-official": true
+  }
 }
